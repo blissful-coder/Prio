@@ -1,0 +1,13 @@
+<button id="new-note">New Note</button>
+
+<script>
+    document.getElementById('new-note').addEventListener('click', () => {
+        const note = document.createElement('div');
+        note.classList.add('sticky-note');
+        note.setAttribute('draggable', true);
+        note.textContent = prompt('Enter task:');
+        note.id = `note-${Date.now()}`;
+        document.getElementById('urgent-important').appendChild(note);
+        note.addEventListener('dragstart', dragStart);
+    });
+</script>

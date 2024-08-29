@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prio</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <div id="header">
+        <button id="add-task-btn">Add Task</button>
+    </div>
+    <div id="matrix">
+        <div class="quadrant" id="urgent-important">
+            <h2>Urgent & Important</h2>
+            <div class="sticky-container" id="container-urgent-important"></div>
+        </div>
+        <div class="quadrant" id="not-urgent-important">
+            <h2>Not Urgent & Important</h2>
+            <div class="sticky-container" id="container-not-urgent-important"></div>
+        </div>
+        <div class="quadrant" id="urgent-not-important">
+            <h2>Urgent & Not Important</h2>
+            <div class="sticky-container" id="container-urgent-not-important"></div>
+        </div>
+        <div class="quadrant" id="not-urgent-not-important">
+            <h2>Not Urgent & Not Important</h2>
+            <div class="sticky-container" id="container-not-urgent-not-important"></div>
+        </div>
+    </div>
+    <script src="/static/app.js"></script>
+</body>
+</html>

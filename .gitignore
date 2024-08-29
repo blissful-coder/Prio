@@ -1,0 +1,28 @@
+# Go binary and build artifacts
+*.exe
+*.test
+*.out
+*.a
+
+# Dependency directories
+vendor/
+node_modules/
+
+# Configuration files
+*.env
+
+# Logs
+*.log
+
+# IDE and editor folders
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# Notes data file
+notes.json

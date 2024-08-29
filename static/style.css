@@ -1,0 +1,52 @@
+/* Style for the header and button */
+#header {
+    padding: 10px;
+    background-color: #f9f9f9;
+    border-bottom: 2px solid #ccc;
+    text-align: center;
+}
+
+#add-task-btn {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+
+/* Style for the matrix container */
+#matrix {
+    display: flex;
+    flex-wrap: wrap;
+    height: calc(100vh - 60px); /* Adjust height to fit the viewport, minus header height */
+}
+
+/* Style for the quadrants */
+.quadrant {
+    flex: 1 1 50%;               /* Flex to ensure 2x2 layout */
+    box-sizing: border-box;
+    position: relative;          /* Required for absolute positioning of sticky notes */
+    border: 2px solid #ccc;      /* Border to separate quadrants */
+    overflow: hidden;            /* Prevent scrolling */
+    padding: 10px;
+    height: 50%;                 /* Adjust height as needed */
+    background-color: #f1f1f1;  /* Light gray background */
+}
+
+/* Style for the sticky notes */
+.sticky-note {
+    background-color: #ffd966;  /* Yellow background */
+    border: 1px solid #000;     /* Black border */
+    border-radius: 5px;
+    padding: 10px;
+    cursor: move;               /* Cursor changes to move icon */
+    position: absolute;
+    width: 150px;
+    box-sizing: border-box;
+    z-index: 100;               /* Ensure sticky note stays on top */
+    min-height: 50px;           /* Minimum height to make text editing easier */
+    white-space: pre-wrap;      /* Preserve whitespace and line breaks */
+    overflow: auto;             /* Ensure overflow is visible */
+}
